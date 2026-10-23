@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome icons for clean UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main Dashboard Grid Container -->
+    <div class="dashboard-container">
+        
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>AdminDash</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i> Users</a></li>
+                <li><a href="#"><i class="fa-solid fa-box"></i> Products</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Navbar Section -->
+        <header class="navbar">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search anything...">
+            </div>
+            <div class="user-profile">
+                <i class="fa-solid fa-bell notification-icon"></i>
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="User Profile">
+                </div>
+                <span>Kersy</span>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                <div class="welcome-text">
+                    <h1>Welcome back, Kersy! 👋</h1>
+                    <p>Here is what's happening with your store today.</p>
+                </div>
+                <button class="btn-primary"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+
+            <!-- Stats Cards Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p>8,450</p>
+                        <span class="trend positive">+12% this week</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green"><i class="fa-solid fa-dollar-sign"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Revenue</h3>
+                        <p>$48,250</p>
+                        <span class="trend positive">+8% this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Orders</h3>
+                        <p>1,230</p>
+                        <span class="trend negative">-3% yesterday</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon purple"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="stat-info">
+                        <h3>Conversion Rate</h3>
+                        <p>3.45%</p>
+                        <span class="trend positive">+1.2%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity / Table Section -->
+            <div class="content-grid-bottom">
+                
+                <!-- Recent Orders Table -->
+                <div class="card recent-orders">
+                    <div class="card-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#9841</td>
+                                <td>Alice Uwase</td>
+                                <td><span class="badge completed">Completed</span></td>
+                                <td>$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>#9842</td>
+                                <td>Eric Mugisha</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>$85.50</td>
+                            </tr>
+                            <tr>
+                                <td>#9843</td>
+                                <td>Diane Ingabire</td>
+                                <td><span class="badge completed">Completed</span></td>
+                                <td>$210.00</td>
+                            </tr>
+                            <tr>
+                                <td>#9844</td>
+                                <td>Patrick Ndayisaba</td>
+                                <td><span class="badge cancelled">Cancelled</span></td>
+                                <td>$45.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Analytics / Summary Widget -->
+                <div class="card analytics-summary">
+                    <div class="card-header">
+                        <h3>Target Progress</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>Monthly Goal</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>User Growth</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
